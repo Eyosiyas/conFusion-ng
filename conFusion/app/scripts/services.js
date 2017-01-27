@@ -1,7 +1,6 @@
 // JavaScript source code
 angular.module('confusionApp')
-    .factory('menuFactory', function () {
-        var menuf = {};
+    .service('menuFactory', function () {
         var dishes = [
                      {
                          name: 'Uthapizza',
@@ -160,13 +159,11 @@ angular.module('confusionApp')
                                 }]
                     }];
 
-        menuf.getDishes = function () {
+        this.getDishes = function () {
             return dishes;
         };
 
-        menuf.getDish = function (index) {
+        this.getDish = function (index) {
             return dishes[index];
         };
-
-        return menuf;
     });
