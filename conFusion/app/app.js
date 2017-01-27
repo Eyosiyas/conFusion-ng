@@ -73,7 +73,7 @@ angular.module('confusionApp', [])
             };
         }])
 
-        .controller('ContactController', ['$scope', function($scope) {
+        .controller('ContactController', ['$scope', function ($scope) {
 
             $scope.feedback = {mychannel:"", firstName:"", lastName:"", agree:false, email:"" };
             
@@ -104,7 +104,7 @@ angular.module('confusionApp', [])
             };
         }])
 
-        .controller('DishDetailController', ['$scope', function($scope) {
+        .controller('DishDetailController', ['$scope', function ($scope) {
 
             var dish={
                           name:'Uthapizza',
@@ -113,7 +113,7 @@ angular.module('confusionApp', [])
                           label:'Hot',
                           price:'4.99',
                           description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-                           comments: [
+                          comments: [
                                {
                                    rating:5,
                                    comment:"Imagine all the eatables, living in conFusion!",
