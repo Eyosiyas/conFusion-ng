@@ -1,4 +1,4 @@
-﻿<div class="container">
+<div class="container">
     <div class="row row-content" ng-controller="DishDetailController">
         <div class="col-xs-12">
             <div class="media">
@@ -43,7 +43,7 @@
                 <div class="form-group" role="group">
                     <label class="col-sm-2 control-label">Number of Stars</label>
                     <div class="col-sm-10 radio">
-                        <label class="radio-inline" ng-repeat="star in [1,2,3,4,5]">
+                        <label class="radio-inline" ng-repeat="star in stars">
                             <input type="radio" ng-model="newComment.rating" name="stars" value={{star}}>{{star}}
                         </label>
                     </div>
